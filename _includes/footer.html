@@ -1,6 +1,7 @@
 <!-- Contact -->
 <section id="contact">
 	<div class="inner">
+		{% if page.show_contact != false %}
 		<section>
 			<form action="https://formspree.io/{{ site.email }}" method="POST">
 				<div class="field half first">
@@ -60,6 +61,7 @@
 				</div>
 			</section>
 		</section>
+		{% endif %}
 	</div>
 </section>
 
